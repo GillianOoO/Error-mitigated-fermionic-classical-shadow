@@ -76,7 +76,7 @@ available are:
 (numpy array) a 2^n times 2^n density matrix with respect to which one wants to estimate expectation values
 
 ### Q0, S0
-(ordered list of integers) specifies the observable $O = U_Q^\dagger \gamma_S U_Q$ for which one wants to estimate $\operatorname{tr}(O \rho)$
+(ordered list of integers) specifies the observable $O = U_Q^\dagger \gamma_S U_Q$ for which one wants to estimate $\text{tr}(O \rho)$
 
 example: for $S=[1,2]$, $\gamma_S=\gamma_1 \gamma_2$
 
@@ -86,7 +86,7 @@ All entries of $S$ must be smaller than $2n$ (total number of majorana operators
 
 
 ### no_samples_arr = [no_samples_est,no_trials_est,no_err_trials]
-(integers) to obtain estimates $\operatorname{tr}(O \rho)$, the median of means estimator is used.
+(integers) to obtain estimates $\text{tr}(O \rho)$, the median of means estimator is used.
 this means that for every quantity that needs to be estimated, no_trials_est batches of no_samples_est single-shot estimates are obtained and the median of means is computed.
 no_err_trials: the number of repetitions to get the error.
 
@@ -95,7 +95,7 @@ expectation value, $tr(\rho O)$
 
 ## outputs
 
-### (float) errors for the estimation with median of means estimate for $\operatorname{tr}(O \rho)$
+### (float) errors for the estimation with median of means estimate for tr$(O \rho)$
     
 
 ### 'sample_matchgates.py' file is provided by Janek Denzler.
